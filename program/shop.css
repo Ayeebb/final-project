@@ -1,0 +1,248 @@
+body {
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: #e1e2e2;
+}
+
+#img1 {
+    margin-top: 5px;
+    margin-bottom: 3px;
+    margin-left: 5px;
+    width: 70px;
+    height: 70px;
+}
+
+html {
+    padding: 0px
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #d48166;
+    border-radius: 25px;
+    width: 100%;
+}
+
+/*header decoration*/
+
+ul>li a {
+    padding: 20px;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+nav>p {
+    font-size: 40px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 5px;
+    margin-left: 90px;
+    margin-top: 15px;
+}
+
+.a {
+    display: flex;
+    list-style: none;
+}
+
+a:hover {
+    color: rgb(0, 0, 0);
+}
+
+a:active {
+    color: gray;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 31% 31% 31%;
+    padding: 100px;
+    gap: 50px;
+}
+
+.mrewel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: cadetblue;
+    padding-top: 20px;
+    border-radius: 20px;
+}
+
+.mrewel img {
+    height: 450px;
+    width: 320px;
+    border-radius: 25px;
+}
+
+.mrewel p {
+    font-size: 25px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    width: 320px;
+
+}
+
+.cartBtn {
+    width: 155px;
+    height: 50px;
+    border: none;
+    border-radius: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    color: white;
+    font-weight: 500;
+    position: relative;
+    background-color: rgb(29, 29, 29);
+    box-shadow: 0 20px 30px -7px rgba(27, 27, 27, 0.219);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.cart {
+    z-index: 2;
+}
+
+.cartBtn:active {
+    transform: scale(0.96);
+}
+
+.product {
+    position: absolute;
+    width: 12px;
+    border-radius: 3px;
+    content: "";
+    left: 23px;
+    bottom: 23px;
+    opacity: 0;
+    z-index: 1;
+    fill: rgb(211, 211, 211);
+}
+
+.cartBtn:hover .product {
+    animation: slide-in-top 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(-30px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0) rotate(-90deg);
+        opacity: 1;
+    }
+}
+
+.cartBtn:hover .cart {
+    animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(-10px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.logoleagues a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logoleagues a img{
+    width: 100px;
+    height: 100px;
+}
+#leagues{ 
+    display: grid;
+    grid-template-columns: 21% 21% 21% 21% 21%;
+    padding: 80px;
+
+}
+.logoleagues p{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: solid;
+}
+
+#prix{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    color: white;
+    padding: 0px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin-right: 20px;
+}
+
+.footer-section h2 {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section ul {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
